@@ -1,0 +1,264 @@
+.column{
+  display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 0px;
+    background-color: #34495E;
+    border: solid goldenrod;
+    width: 280px;
+    height: 490px;
+    color: white;
+    gap: 50px;
+}
+.card{
+  background-color: rgb(144, 209, 243);
+}
+/* This is for column 5 or  .fifth-column. It changes the color from others. Example: 1/4 of a box is green.
+   .fifth-column is the same as column 5.     */
+.column5{
+  grid-template-columns: auto;
+  background-color: green;
+  width: 280px;
+  height: 490px;
+  color: white; 
+}
+*/
+.fifth-column {   
+  float: left;
+  width: 280px;
+  text-align: justify;
+  background-color: beige;
+}
+
+.header1{
+    background-color:goldenrod;
+    width: 280px;
+    padding: .1px;
+    margin: 0px;
+    text-align: center;
+}
+
+/* header 4 $50.00, All under one roof, Certified & experienced   */
+.header4{ 
+  text-align: center;
+  color: white;
+  background-color: #34495E;
+  width: 280px;
+}
+.header4 :hover{ 
+    background-color: black;       
+}
+/* header 5 “Dogs never bite me. Just humans.” – Marilyn Monroe*/
+.header5{ 
+  text-align: center;
+  color: white;
+  width: 280px;
+}
+.header5 :hover{ 
+    background-color: goldenrod;
+}
+ /* for cancel booking*/
+ .header6{ 
+  text-align: center;
+  color: red;
+  padding: 0px;
+  width: 280px;
+}
+.header6 :hover{ 
+  background-color: green;
+}
+.header6 h4{
+  color: red;
+ }
+ .header6 h5{
+  color: greenyellow;
+ }
+  
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 180px;
+    width: 200px; 
+    border-radius: 50%;
+  }
+
+
+/* navi bar below this line */
+.nav-menu{
+    width: auto;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#34495e ;
+   
+  }
+  
+  li {
+    float: left;
+    border-right:1px solid #bbb;
+  }
+  
+  li:last-child {
+    border-right: none;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #5B5833 ;
+  }
+  /*header section*/
+  
+  /* website header title */
+  
+  .header {
+    padding: 30px;
+    text-align: left;
+    /*background:#42aff7;*/
+    background:white;
+    color: goldenrod;
+    
+  }
+  .header h1 {
+    font-size: 50px;
+  }
+  
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    padding: 10px;
+    background: #f1f1f1;
+  }
+  
+  /* five columns that floats next to each other */
+  
+  /* left column (first-column*/
+  .first-column {   
+    float: left;
+    width: 280px;
+    text-align: justify;
+    background-color: beige;
+  }
+  .second-column {   
+    float: left;
+    width: 280px;
+    text-align: justify;
+    background-color: beige;
+  }
+  .third-column {   
+    float: left;
+    width: 280px;
+    text-align: justify;
+    background-color: beige;
+  }
+  .fourth-column {   
+    float: left;
+    width: 280px;
+    text-align: justify;
+    background-color: beige;
+  }
+  .fifth-column {   
+    float: left;
+    width: 280px;
+    text-align: justify;
+    background-color: beige;
+  }
+  
+  /* Clear floats after the columns */
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background:  goldenrod;
+    margin-top: 20px;
+    color: white;
+  }
+  
+  input{
+    width: 240px;
+    height: 30px;
+} 
+ /* canine massage table for cancel*/
+.table-dog-regis-service{
+   width: 260px;
+   background-color: #22577a;
+   min-height: 400px;
+   float: left; 
+   text-align: center;  
+   border-style: double;  
+   padding: 10px;  
+   color: white;       
+}
+ /*  booking table*/
+.table-dog-regis{
+    width: 260px;
+    background-color: #22577a;
+    min-height: 400px;
+    float: left; 
+    text-align: center;  
+    border-style: double;  
+    padding: 10px;  
+    color: white; 
+}
+/*  booking title on the top of a table h1 color white*/
+ .table-dog-regis h1{
+     color: white;
+    }  
+    /* cancel table*/  
+.table-dog-cancel{
+   width: 260px;
+    background-color: #22577a;
+    min-height: 400px;
+    float: left; 
+    text-align: center;  
+    border-style: double;  
+    padding: 10px;  
+    color: white;          
+}
+.table-dog-cancel h5{
+  color: yellowgreen;
+}
+       /* canceling title on the top of a table h1 color red*/
+.table-dog-cancel h1{
+ color: red;
+}       
+   /* Clear floats after the columns */
+   .row::after {
+     content: "";
+     display: table;
+     clear: both;
+   }
+
+/* Responsive layout - when the screen is less than 800px wide, make the five columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .first-column, .second-column, .third-column, .fourth-column, .fifth-column{   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+  
+  
