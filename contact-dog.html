@@ -6,39 +6,98 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contact Page </title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <meta name="description" content="Follow news about front-end builder, back-end engineer, software  engineer, application developer, html, CSS, Bootstrap, and JavaScript students.">
-        <meta name="keywords" content="web developer, web application engineer, mobile app development, web development,software programmer,  software design, programming software ">
-        <link rel="stylesheet" href="dogservicestyle.css">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <link rel="stylesheet" href="CSS/dogservicestyle.css">
 </head>
 <body>
     <div class="header"> <!-- header div start here, social media links and name of the webpage inside -->
         
         <h1>Dog Services</h1>  <!-- full name of webpage --> 
-        <div class="nav-menu"> <!-- navigation menu or bar start here -->
+        <p class="nav-menu"> <!-- navigation menu or bar start here -->
     <ul>
-        <li><a class="active" href="index.html">Home</a></li>
+        <li><a class="active" href="index-dog.html">Home</a></li>
         <li><a href="about-dog.html">About</a></li>
-        <li><a href="locations-dog.html">Location</a></li>
+        <li><a href="locations-dog.html">Locations</a></li>
         <li><a href="contact-dog.html">Contact</a></li>   
-    </ul> 
-    <h1>This is Contact Us page!</h1>
-    <p>Some text here</p>
-                               <!----------------------column 1--------------------------------------->
+    </ul> <!-- navigation menu or bar end here -->
 
-           <!-------------------------------end of fifth-column-------------------------------->
+        <div class="row">
+            <div class="column-one-contact-page">
+            <img src="Media/jamie-street-MoDcnVRN5JU-unsplash.jpg" alt="jamie-street-MoDcnVRN5JU-unsplash" style="height: 100%; width: 100%;">
+                    <h3>Dog Helps Rescue Owner Who Fell 70 Feet in California Forest</h3>
+                    <p>Saul, a black Border collie, helped lead search and rescue crews to his owner, who the authorities said had broken his hip
+                        and multiple ribs after falling from a ridge. A 53-year-old man and his black Border collie, Saul, were on a hike last week 
+                        near California’s Tahoe National Forest, surrounded by trees and steep canyons, when something went wrong. The man fell 70 feet 
+                        from a ridge, breaking his hip and multiple ribs, the authorities said. He had no phone. Just a dog by his side. <!--The man, whose name 
+                        the authorities did not release, crawled up a rocky bluff to his camp where he had been staying, and was able to call 911 about noon on
+                        July 13 and ask for help, said Sgt. Dennis Haack of the Nevada County Sheriff’s Office. About seven hours later, volunteers with the Nevada 
+                        County Sheriff’s Search and Rescue group came across Saul in the forest. The dog jumped up and down, spun around in circles and ran 20 feet 
+                        ahead of them, Sergeant Haack said. Then, Saul looked back at the volunteers, he said, as if to say: Follow me. “Hey, I think this dog is 
+                        trying to lead us somewhere,” Sergeant Haack recalled a volunteer saying by radio. “So we’re going to follow him.” Sergeant Haack and others 
+                        at a nearby command post were puzzled. “We didn’t put a whole lot of faith in it,” he said. “But I do put a lot of faith in our searchers 
+                        because they’re extremely good at what they do.” They followed Saul for about 200 yards, and there, lying in a bed of dirt and covered by 
+                        a camouflage tarp, was the injured man, in pain but grateful for his loyal pet and the volunteers.--->
+                        <a href="https://www.nytimes.com/2022/07/19/us/dog-saves-owner-tahoe-california.html">NY Times</a></p>
+                        <h2>You can use Contact Form to contact us.</h2>
+        <div class="row"> <!-------- One row for both (left and right) class = column-contact-page-->
+            <div class="column-one-contact-page"> <!------contact page left column-->
+                <div id="form-submitted-msg" style="height: 200px; width: 300px; background-color: green; color: white;"><h2>Form successfully submitted!</h2>
+                    <h1 style="background-color: greenyellow;text-align: center; color: black;">Thank You</h1>
+                </div>
+            
+                    <form id="exampleForm" novalidate>
+                        <div class="input-group">
+                          <h2 style="background-color: yellow;">Contact Form</h2>
+                        <label for="firstName" class="form-label">First name </label>
+                        <input type="text" id="firstName" name="firstName" class="form-control" required>
+                        <small class="error-msg invalid-feedback">Required</small>
+                        </div>
+                        <div class="input-group">
+                        <label for="lastName" class="form-label">Last name </label>
+                        <input type="text" id="lastName" name="lastName" class="form-control" required>
+                        <small class="error-msg invalid-feedback">Required</small>
+                        </div>
+                        <div class="input-group">
+                        <label for="email" class="form-label">Email </label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                        <small class="error-msg invalid-feedback">Required</small>
+                        </div>
+                        <div class="input-group">
+                        <label for="phoneNumber" class="form-label">Phone number </label>
+                        <input type="number" id="phoneNumber" name="phoneNumber" class="form-control" required>
+                        <small class="error-msg invalid-feedback">Required</small>
+                        </div>
+                        <div class="form-btns">
+                        <button type="submit" class="btn btn-primary submit" disabled>SUBMIT</button>
+                        <button type="reset" class="btn btn-secondary">CLEAR FORM</button>
+                        </div>
+                    </form>                               
+                </div>
+            </div>
+        </div>
+            <div class="column-two-contact-page">
+                    <h1>Contact Dog Services Leadership</h1>
+                    <img src="Media/christina-wocintechchat-com-c5pRBXFhJgo-unsplash.jpg" alt="Photo by LinkedIn Sales Solutions" style="height: 100%; width: 100%">
+                        <p>Founder and President: Dr Caroline Bentley, caroline.bentley@dogservises.com</p><br>
+                        <p>Vice President: Linda Brooks, linda.brooks@dogservises.com</p><br>
+                        <p>Finance Chief: Suzan Easton, suzan.easton@dogservises.com</p><br>
+                        <p>PR Chief: Emma Bennett, emma.bennett@dogservises.com</p><br>
+                        <p>HR Chief: Evelyn Asher, evelyn.asher@dogservises.com</p><br>
+                        <p>Northeast Boss: Abigail Romeo, abigail.romeo@dogservises.com</p><br>
+                        <p>Southwest Boss: Madeline Maximiliano, madeline.maximiliano @dogservises.com</p><br>
+                        <p>West Boss: Clara Thomson, clara.thomson@dogservises.com</p><br>
+                        <p>Southeast Boss: Melody Patrick, melody.patrick@dogservises.com</p><br>
+                        <p>Midwest Boss: Katherine Edward, katherine.edward@dogservises.com</p><br>
+            </div>
+        </div>
 
-</div> <!-- div for class row end here---->
-<div class="footer">  <!--div footer start here-->
-    <footer> <!--footer start here-->  
-          <p>Copyright © 2023 Dog Services. All rights reserved.</p><br>
-    </footer>      <!-- end of footer -->
-</div>  <!-- div footer end  here--> 
-         <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
- <!---------------- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
- --------------------------->
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>    
+        <div class="footer">  <!--div for class footer start here-->
+          <div class="footer-column"> <!-- div for footer-column start here-->
+          </div>   <!-- div for footer-column end here--> 
+       <br><p>Copyright © 2023 Dog Services. All rights reserved.</p>
+    </div>  <!--div for class footer end here-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script> 
+<script src="JS/appointment-form.js"></script> 
 </body>  
 </html>
