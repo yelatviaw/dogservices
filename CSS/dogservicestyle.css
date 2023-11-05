@@ -1,11 +1,10 @@
 
-
 .column{
   display: grid;
     /*grid-template-columns: auto auto auto auto auto auto;*/
     grid-gap: 0px;
     background-color: #34495E;
-    border: solid goldenrod;
+    border:solid #4CEFF4;
     width: 305px;
     height: 490px;
     color: white;
@@ -174,11 +173,11 @@ ul {
     width: 240px;
     height: 30px;
 } 
-   
+   /* three dog images on front page*/
    .card {
-    background:  goldenrod;
+    background:  #4CEFF4;  /* shows on the border of three dog images on front page*/
     padding: 5px;
-    margin: 10px;
+    margin: 10px; /* applays margin on all card including senior leadership images*/ 
     width: 410px;
    }
    .senior-leadership-members{
@@ -216,6 +215,7 @@ ul {
 
 /* CSS to style Contact Form start here */
 #exampleForm{
+  position: relative;
   width: 300px;
   color: black;
   background-color: #4CEFF4;
